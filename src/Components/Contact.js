@@ -8,7 +8,7 @@ function Contact() {
                 <Row className="p-5">
                     <Col>
                         <h1 id="creator">Creator</h1>
-                        <p id="creator-content">So people can understand you better</p>
+                        <p id="creator-content">Paragraph about yourself so people can understand you and feel more connected</p>
                     </Col>
 
                     <Col>

@@ -4,7 +4,7 @@ import mobile from '../images/mobile-preview.png';
 function Preview() {
 
     return (
-        <div className="preview">
+        <div className="preview" id="preview-bg">
             <Container className="p-5">
                 <Row className="p-5">
                     <Col sm={8} className="pt-5">
