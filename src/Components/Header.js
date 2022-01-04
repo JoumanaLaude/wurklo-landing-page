@@ -7,8 +7,13 @@ function Header() {
 
     return (
         <nav>
+
             <Navbar isOpen={isOpen} expand="md" full dark>
-                <NavbarBrand href="/"><img src={coin} className="navbar-coin" alt="wurklo logo" /> WURKLO</NavbarBrand>
+                <NavbarBrand href="/">
+                    <img src={coin} className="navbar-coin" alt="Wurklo logo" />
+                    Wurklo
+                    <div className="divider"></div>
+                </NavbarBrand>
                 <NavbarToggler onClick={() => setIsOpen(isOpen ? false : "isOpen")} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar className="justify-content-start" style={{ width: "100%" }}>

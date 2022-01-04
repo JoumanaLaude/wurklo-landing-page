@@ -65,6 +65,7 @@
     background: #e7f5d9;
     padding: 6px 10px;
     border-radius: 5px;
+    font-size: 2rem;
     font-weight: 600;
     text-align: left;
   }
@@ -131,8 +132,7 @@
   
   .desc {
     margin: 1em 0.75em 0 0;
-    
-    font-size: 0.77777em;
+    font-size: 1em;
     font-style: italic;
     line-height: 1.5em;
   }

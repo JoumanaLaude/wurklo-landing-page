@@ -11,41 +11,55 @@ h1 {
   font-size: 5.4rem;
 
 }
-
 h2 {
   font-size: 2.4rem;
 }
-
-h1, h2, p {
+h1, h2, p, .navbar-dark .navbar-nav .nav-link {
   color: #e0e1dd;
   font-weight: 700;
 }
-
 p {
   font-size: 1.6rem;
   line-height: 2rem;
   padding: 1rem 0;
 }
-
-.navbar {
-  background-color: #3f4548;
-  /* box-shadow: -4px -3px 15px 5px rgba(0,0,0,0.25); */
-  z-index: 1;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
 a:hover {
   cursor: pointer;
 }
 
+/* note: styles target reactstrap elements */
+
+/* navbar */
+.navbar {
+  display: flex;
+  background-color: #3f4548;
+  z-index: 1;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  padding-right: 15px;
+  letter-spacing: 1.2px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+img.navbar-coin {
+  width: 50px;
+  margin-right: 1rem;
+}
+.divider {
+  border-left: 1px solid #e0e1dd;
+  height: 30px;
+  margin-left: 30px;
+  display: inline-flex;
+}
+
+/* button styles for all buttons on page */
 #connect-button:hover, #roadmap-button:hover {
   background: #e0e1dd;
 }
-
 #connect-button {
   color: #07020d;
   background: #B1DDF1;
@@ -53,16 +67,13 @@ a:hover {
   width: 150px;
   border: 0px;
 }
-
 #launch {
   color: #B1DDF1;
 }
-
 #roadmap-button {
   color: #07020d;
   background: #e7f5d9;
 }
-
 #about-button, #roadmap-button {
   font-size: 1.2rem;
   padding: 1rem;
@@ -70,100 +81,89 @@ a:hover {
   margin-right: 15px;
 }
 
-.about {
-  background: #e7f5d9;
-  text-align: center;
-}
-
-#about {
-  color: #3f4548;
-  font-size: 2.4rem;
-}
-
+/* landing component */
 .landing {
   background: #3f4548;
   padding-top: 5rem;
   width: 100%;
-  height:92vh;
+  height:100vh;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23e0e1dd' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23e0e1dd' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23e0e1dd' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23e0e1dd' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23e0e1dd' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23e0e1dd' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23e0e1dd' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23e0e1dd' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23e0e1dd' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23e0e1dd' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23e0e1dd' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* about component with cards */
+.about {
+  background: #e7f5d9;
+  text-align: center;
+}
+#about {
+  color: #3f4548;
+  font-size: 2.4rem;
+}
 .card { 
   border: 0px;
-  height: 40vh;
+  height: 50vh;
 }
-
 .card-title {
   font-weight: 700;
   font-size: 2rem;
   color: #3f4548;
 }
-
 .card-text {
   font-size: 1.4rem;
   color: #3f4548;
 }
 
+/* preview of app component */
 .preview {
   background: #B1DDF1;
 }
-
 #preview-bg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='900' preserveAspectRatio='none' viewBox='0 0 1440 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1257%26quot%3b)' fill='none'%3e%3crect width='1440' height='600' x='0' y='0' fill='rgba(177%2c 221%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c519 C 288%2c468.2 1152%2c315.8 1440%2c265L1440 600L0 600z' fill='rgba(63%2c 69%2c 72%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1257'%3e%3crect width='1440' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");  background-repeat: no-repeat;
 }
 
+/* ending component */
 #app-content, #creator-content {
   color:#3f4548;
 }
-
 #app-preview {
   color: #3f4548;
   font-weight: 700;
   padding-bottom: 1rem;
 }
-
 .contact {
   background: #e7f5d9;
   padding-left: 7rem;
 }
-
 #creator, #contact, #roadmap {
   color: #3f4548;
   padding-bottom: 2rem;
 }
 
+/* footer component */
 footer {
   background: #3f4548;
   text-align: center;
   padding: 2rem;
   height: fit-content;
 }
-
 .fa-fw {
   color: #B1DDF1;
   margin-right: 1rem;
   font-size: 50px;
 }
-
 .fa-fw:hover {
   color: #e7f5d9;
 }
 
-/* images */
-
+/* image styling */
 img {
-  max-width:100%;
+  max-width: 100%;
   height: auto;
 }
-
-img.navbar-coin {
-  height: auto;
-  width: 50px;
-  padding: 5px;
-}
-
 #mobile {
   height: 600px;
   max-width:100%;
   border: 10px solid #e7f5d9;
 }
+
+/* media queries */
