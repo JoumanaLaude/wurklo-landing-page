@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
 import About from './components/About';
+import Roadmap from './components/Roadmap';
 import Preview from './components/Preview';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -26,6 +27,7 @@ function App() {
         <Landing />
         <About />
         <Preview />
+        <Roadmap />
         <Contact />
         <Footer />
 

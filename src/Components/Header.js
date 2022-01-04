@@ -13,7 +13,7 @@ function Header() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar className="justify-content-start" style={{ width: "100%" }}>
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">About</NavLink></NavItem>
-                        <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Roadmap</NavLink></NavItem>
+                        <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">NEx Program</NavLink></NavItem>
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Store</NavLink></NavItem>
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">NFT</NavLink></NavItem>
                         {/* <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Download</NavLink></NavItem> */}

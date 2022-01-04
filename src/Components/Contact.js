@@ -6,12 +6,16 @@ function Contact() {
         <div className="contact">
             <Container className="p-5">
                 <Row className="p-5">
-                    <h1 id="contact">Contact Us</h1>
-                    <Col xs="4" />
                     <Col>
+                        <h1 id="creator">Creator</h1>
+                        <p id="creator-content">So people can understand you better</p>
+                    </Col>
+
+                    <Col>
+                        <h1 id="contact">Contact</h1>
                         <Form>
                             <FormGroup row>
-                                <Label for="name" sm={1}>Name:</Label>
+                                <Label for="name" sm={2}>Name:</Label>
                                 <Col sm={{ size: 6 }}>
                                     <Input
                                         type="name"
@@ -22,7 +26,7 @@ function Contact() {
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
-                                <Label for="email" sm={1}>Email:</Label>
+                                <Label for="email" sm={2}>Email:</Label>
                                 <Col sm={{ size: 6 }}>
                                     <Input
                                         type="email"
@@ -35,7 +39,7 @@ function Contact() {
 
                             <FormGroup row>
                                 <Label for="text">
-                                    Your message:
+                                    Message:
                                 </Label>
                                 <Col sm={{ size: 7 }}>
                                     <Input
@@ -54,6 +58,7 @@ function Contact() {
                             </FormGroup>
                         </Form>
                     </Col>
+
                 </Row>
             </Container>
         </div>

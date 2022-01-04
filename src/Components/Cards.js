@@ -10,7 +10,7 @@ function Cards() {
                         <Card>
                             {/* <CardImg alt="..." src="" top></CardImg> */}
                             <CardBody>
-                                <CardTitle>Connect</CardTitle>
+                                <CardTitle>📱<br />Connect</CardTitle>
                                 <CardText>
                                     Connect with trusted neighbors and locals using our safe app.
                                 </CardText>
@@ -22,9 +22,9 @@ function Cards() {
                         <Card>
                             {/* <CardImg alt="..." src="" top></CardImg> */}
                             <CardBody>
-                                <CardTitle>Earn</CardTitle>
+                                <CardTitle>💰<br />Earn</CardTitle>
                                 <CardText>
-                                    Earn cash for any skill.
+                                    Earn cash for any skill on your own time.
                                 </CardText>
                                 <Button>Learn more</Button>
                             </CardBody>
@@ -34,9 +34,9 @@ function Cards() {
                         <Card>
                             {/* <CardImg alt="..." src="" top></CardImg> */}
                             <CardBody>
-                                <CardTitle>Grow</CardTitle>
+                                <CardTitle>🌱<br />Grow</CardTitle>
                                 <CardText>
-                                    Join our No Experience Neccessary Program (NEx) to learn more valuable skills.
+                                    Join our No Experience Neccessary Program (NEx) to learn more valuable skills and work alongside professionals.
                                 </CardText>
                                 <Button>Learn more</Button>
                             </CardBody>
