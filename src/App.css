@@ -4,21 +4,22 @@
   margin: 0;
   padding: 0;
   font-family: 'ABeeZee', sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
   font-size: 6rem;
   font-weight: 700;
+  text-align: center;
 }
 
-h1, h2, p {
+h1, h2 {
   color: #fff;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
-  text-shadow: #222;
   padding: 1rem 0;
 }
 
@@ -33,12 +34,13 @@ p {
 
 .navbar {
   background-color: #3f4548;
-  box-shadow: -4px -3px 15px 5px rgba(0,0,0,0.25);
+  /* box-shadow: -4px -3px 15px 5px rgba(0,0,0,0.25); */
   z-index: 1;
 }
 
 .nav-link {
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -72,10 +74,14 @@ img.navbar-coin {
   border: 0px;
 }
 
+#launch {
+  color: #B1DDF1;
+}
+
 #roadmap-button {
   color: #07020d;
   font-size: 1.2rem;
-  background: #B1DDF1;
+  background: #e7f5d9;
   padding: 1rem;
   border: 0px;
   z-index: 2;
@@ -87,18 +93,46 @@ img.navbar-coin {
 }
 
 #about {
-  color: #1b5baf;
+  color: #3f4548;
   font-size: 2.4rem;
 }
 
+.card { 
+  border: 0px;
+  height: 40vh;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #3f4548;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.preview {
+  background: #3f4548;
+}
+
 #app-preview {
-  color: #07020d;
+  color: #B1DDF1;
   font-weight: 700;
   padding-bottom: 1rem;
 }
 
+.contact {
+  background: #B1DDF1;
+}
+
+#contact {
+  color: #3f4548;
+  padding-bottom: 2rem;
+}
+
 footer {
-  background: #1b5baf;
+  background: #3f4548;
   text-align: center;
   padding: 2rem;
   height: fit-content;
@@ -112,8 +146,4 @@ footer {
 
 .fa-fw:hover {
   color: #e7f5d9;
-}
-
-.contact {
-  background: #B1DDF1;
 }

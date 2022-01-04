@@ -6,10 +6,9 @@ function Contact() {
         <div className="contact">
             <Container className="p-5">
                 <Row className="p-5">
-                <Col xs="4" />
+                    <h1 id="contact">Contact Us</h1>
+                    <Col xs="4" />
                     <Col>
-                        <h1>Contact Us</h1>
-
                         <Form>
                             <FormGroup row>
                                 <Label for="name" sm={1}>Name:</Label>
@@ -49,12 +48,11 @@ function Contact() {
                             </FormGroup>
 
                             <FormGroup check row>
-                                <Col xs={{ size: 3, offset: 6 }} className="pt-3">
+                                <Col sm={{ size: 4, offset: 2 }} className="pt-3">
                                     <Button>Submit</Button>
                                 </Col>
                             </FormGroup>
                         </Form>
-
                     </Col>
                 </Row>
             </Container>

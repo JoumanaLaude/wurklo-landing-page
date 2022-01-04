@@ -15,7 +15,8 @@ function Header() {
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">About</NavLink></NavItem>
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Roadmap</NavLink></NavItem>
                         <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Store</NavLink></NavItem>
-                        <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Download</NavLink></NavItem>
+                        <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">NFT</NavLink></NavItem>
+                        {/* <NavItem><NavLink onClick={() => setIsOpen(false)} to="#">Download</NavLink></NavItem> */}
 
                     </Nav>
                     <NavbarText>$0.00</NavbarText>{' '}
