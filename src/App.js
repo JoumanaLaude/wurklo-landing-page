@@ -1,43 +1,30 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Landing from './components/Landing';
-import About from './components/About';
-import Roadmap from './components/Roadmap';
-import Preview from './components/Preview';
-import Contact from './components/Contact';
+import LandingPage from './pages/LandingPage';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutPage from './pages/AboutPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   const Home = () => {
     return (
-      <>
-        <Landing />
-        <About />
-      </>
+      <LandingPage />
     );
   };
 
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Header />
-        <Landing />
-        <About />
-        <Preview />
-        <Roadmap />
-        <Contact />
-        <Footer />
-
         <Routes>
-          <Route path='/' component={Home} />
-          {/* <Route exact path='/' component={} />
-          <Route exact path='/' component={} />
-          <Route exact path='/' component={} /> */}
+          <Route path="/" element={<LandingPage />} />
+          <Route path="about" element={<AboutPage />} />
+          {/* <Route exact path='/' component={} /> */}
         </Routes>
-      </Router>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
