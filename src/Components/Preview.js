@@ -7,7 +7,7 @@ function Preview() {
         <div className="preview" id="preview-bg">
             <Container className="p-5">
                 <Row className="p-5">
-                    <Col sm={8} className="pt-5">
+                    <Col sm={8} xs={12} className="pt-5">
                         <h1 id="app-preview">Wurklo App</h1>
                         <p id="app-content">Wurklo focuses on accelerating and improving the service industry by
                             providing wurkers with advanced software in a simple design that will give

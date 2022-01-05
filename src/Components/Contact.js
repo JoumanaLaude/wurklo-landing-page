@@ -6,7 +6,7 @@ function Contact() {
         <div className="contact">
             <Container className="p-5">
                 <Row className="p-5">
-                    <Col>
+                    <Col lg={6}>
                         <h1 id="creator">Creator</h1>
                         <p id="creator-content">Paragraph about yourself so people can understand you and feel more connected</p>
                     </Col>

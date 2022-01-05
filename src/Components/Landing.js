@@ -12,11 +12,11 @@ function Landing() {
                         <h1>Wurklo</h1>
                         <h2>Improving the service industry by providing wurkers with equal power.</h2>
                         <p id="launch">Anticipated Launch:<br />August 2022 - December 2022</p>
-                        <Button id="about-button">Read About Us</Button>{' '}
-                        <Button id="roadmap-button">View Roadmap</Button>
+                        <Button id="whitepaper-button">Whitepaper</Button>{' '}
+                        <Button id="roadmap-button">Roadmap</Button>
                     </Col>
-                    <Col>
-                        <img src={coin} alt="wurklo coin" />
+                    <Col xs={4}>
+                        <img src={coin} alt="wurklo coin" id="coin-img" className="d-none d-md-block" />
                     </Col>
                 </Row>
             </Container>

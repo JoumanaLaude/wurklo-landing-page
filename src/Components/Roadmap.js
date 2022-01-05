@@ -47,7 +47,7 @@ function Roadmap() {
                     </li>
                     <li>
                         <div class="direction-r">
-                            <Button>View More</Button>
+                            <Button id="timeline-button">View More</Button>
                         </div>
                     </li>
                 </ul>

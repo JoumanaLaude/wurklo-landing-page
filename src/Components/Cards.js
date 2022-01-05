@@ -14,7 +14,7 @@ function Cards() {
                                 <CardText>
                                     Connect with trusted neighbors and locals using our safe app.
                                 </CardText>
-                                <Button>Learn more</Button>
+                                <Button id="card-button">Learn more</Button>
                             </CardBody>
                         </Card>
                     </Col>
@@ -26,7 +26,7 @@ function Cards() {
                                 <CardText>
                                     Earn cash for any skill on your own time.
                                 </CardText>
-                                <Button>Learn more</Button>
+                                <Button id="card-button">Learn more</Button>
                             </CardBody>
                         </Card>
                     </Col>
@@ -38,7 +38,7 @@ function Cards() {
                                 <CardText>
                                     Join our No Experience Neccessary Program (NEx) to learn more valuable skills and work alongside professionals.
                                 </CardText>
-                                <Button>Learn more</Button>
+                                <Button id="card-button">Learn more</Button>
                             </CardBody>
                         </Card>
                     </Col>

@@ -56,31 +56,6 @@ img.navbar-coin {
   display: inline-flex;
 }
 
-/* button styles for all buttons on page */
-#connect-button:hover, #roadmap-button:hover {
-  background: #e0e1dd;
-}
-#connect-button {
-  color: #07020d;
-  background: #B1DDF1;
-  padding: .15rem;
-  width: 150px;
-  border: 0px;
-}
-#launch {
-  color: #B1DDF1;
-}
-#roadmap-button {
-  color: #07020d;
-  background: #e7f5d9;
-}
-#about-button, #roadmap-button {
-  font-size: 1.2rem;
-  padding: 1rem;
-  border: 0px;
-  margin-right: 15px;
-}
-
 /* landing component */
 .landing {
   background: #3f4548;
@@ -155,6 +130,43 @@ footer {
   color: #e7f5d9;
 }
 
+/* button styles for all buttons on page */
+#connect-button:hover, #roadmap-button:hover, #timeline-button:hover {
+  background: #e0e1dd;
+}
+#connect-button {
+  color: #3f4548;
+  background: #B1DDF1;
+  padding: .15rem;
+  width: 150px;
+}
+#launch {
+  color: #B1DDF1;
+}
+#roadmap-button, #timeline-button {
+  color: #3f4548;
+  background: #e7f5d9;
+}
+#whitepaper-button, #roadmap-button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 0px;
+  margin-right: 15px;
+}
+#card-button {
+  background: #3f4548;
+  letter-spacing: .8px;
+}
+#card-button:hover {
+  background: #B1DDF1;
+  color: #3f4548;
+  border: none;
+}
+.btn-secondary {
+  font-weight: 700;
+  border: none;
+}
+
 /* image styling */
 img {
   max-width: 100%;
@@ -167,3 +179,54 @@ img {
 }
 
 /* media queries */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2, #launch {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+    margin-top: 20px;
+  }
+  .landing {
+    height: auto;
+    padding-top: 0;
+  }
+  #whitepaper-button, #roadmap-button {
+    margin-bottom: 1rem;
+  }
+  #about {
+    font-size: 1.7rem;
+    line-height: 1.8em;
+  }
+  .card {
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+    right: 2rem;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+  #preview-bg, #timeline-button {
+    display: none;
+  }
+  .contact {
+    padding-left: 0;
+  }
+  #creator, #creator-content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 800px) {
+  ul.timeline {
+    right: 6rem;
+  }
+}
