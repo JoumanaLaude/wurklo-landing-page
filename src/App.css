@@ -183,7 +183,6 @@ img {
 #mobile {
   height: 600px;
   max-width:100%;
-  border: 10px solid #e7f5d9;
 }
 
 /* media queries */
@@ -241,7 +240,6 @@ img {
   #mobile {
     height: auto;
     width: 300px;
-    border: 5px solid #e7f5d9;
     margin-top: 10rem;
   }
 }

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
-import mobile from '../images/mobile-preview.png';
+import mobile from '../images/mobile-preview-phone';
 
 function Preview() {
 
